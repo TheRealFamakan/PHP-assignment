@@ -1,70 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-    margin: 0;
-    padding: o;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 40px;
+    color: #333;
 }
 
-body{
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #1976d2;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 0 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-delete {
+    background-color: #e53935;
+}
+
+.btn-edit {
+    background-color: #43a047;
+}
+
+.btn-add {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-add:hover {
+    background-color: #0277bd;
+}
+
+.actions {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url(img.png);
-    background-position: center;
-    background-size: cover;
 }
 
-form{
-    background-color: transparent;
-    padding:30px;
-    width: 420px;
-    border-radius: 20px;
-    border: 2px solid rgb(255, 255, 255,0.2);
-    backdrop-filter: blur(20px);
+form {
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-form h1{
-    font-size: 30px;
-    color: #efff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.input-box{
-    width: 100%;
-    position:relative;
-    margin-bottom: 25px;
-}
-
-.input-box input{
-    width: 100%;
-    padding: 10px;
-    border-radius:25px;
-    background-color: transparent;
-    outline: none;
-    border: 2px solid rgb(255, 255, 255, 0.2);
-    color: #efff;
-    padding-right: 40px;
-}
-
-.input-box input::placeholder{
-    color:#efff;
-}
-
-.sirr-btn {
-    width: 100%;
+form label {
     font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background-color: white; 
 }
 
-.sirr-btn:hover {
-    background-color: #019875; 
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0277bd;
+}
+
+.center {
+    text-align: center;
 }
