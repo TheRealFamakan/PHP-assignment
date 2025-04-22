@@ -12,7 +12,7 @@ if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
     $stmt = $conn->prepare("DELETE FROM Personne WHERE id = ?");
     $stmt->execute([$id]);
-    header("Location: users.php");
+    header("Location: PHPSQL.users.php");
     exit();
 }
 
@@ -27,7 +27,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des utilisateurs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="PHPSQL.style.css">
 </head>
 <body>
 <h2>Liste des utilisateurs</h2>
