@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare("UPDATE Personne SET nom = ?, email = ? WHERE id = ?");
     $stmt->execute([$nom, $email, $id]);
 
-    header("Location: users.php");
+    header("Location: PHPSQL.users.php");
     exit();
 }
 ?>
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un user</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="PHPSQL.style.css">
 </head>
 <body>
 <h2>Modifier un utilisateur</h2>
