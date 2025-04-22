@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $conn->prepare("INSERT INTO Personne (nom, email) VALUES (?, ?)");
         $stmt->execute([$nom, $email]);
 
-        header("Location: users.php"); 
+        header("Location: PHPSQL.users.php"); 
         exit();
     } catch (PDOException $e) {
         echo "Erreur : " . $e->getMessage();
