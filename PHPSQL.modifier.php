@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Enregistrer</button>
 </form>
 
-<a href="users.php">Retour à la liste</a>
+<a href="PHPSQL.users.php">Retour à la liste</a>
 </body>
 </html>
 
