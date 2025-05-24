@@ -44,15 +44,15 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?= htmlspecialchars($user['nom']) ?></td>
             <td><?= htmlspecialchars($user['email']) ?></td>
             <td>
-                <a href="users.php?delete=<?= $user['id'] ?>" onclick="return confirm('Supprimer cet utilisateur ?')">Supprimer</a>
-                <a href="modifier.php?id=<?= $user['id'] ?>">Modifier</a>
+                <a href="PHPSQL.users.php?delete=<?= $user['id'] ?>" onclick="return confirm('Supprimer cet utilisateur ?')">Supprimer</a>
+                <a href="PHPSQL.modifier.php?id=<?= $user['id'] ?>">Modifier</a>
             </td>
         </tr>
     <?php endforeach; ?>
 </table>
 
 <br>
-<a href="add_user.php">Ajouter un utilisateur</a>
+<a href="PHPSQL.add_user.php">Ajouter un utilisateur</a>
 
 </body>
 </html>
