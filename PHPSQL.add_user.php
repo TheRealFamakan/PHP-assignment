@@ -42,6 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Ajouter</button>
 </form>
 
-<a href="users.php">Voir les utilisateurs</a>
+<a href="PHPSQL.users.php">Voir les utilisateurs</a>
 </body>
 </html>
